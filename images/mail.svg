@@ -1,0 +1,15 @@
+<svg id="mail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <filter id="envelope-regular" x="4.5" y="11" width="40.762" height="33" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="Rectangle_19" data-name="Rectangle 19" width="50" height="50" rx="5" fill="#130e0e"/>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#envelope-regular)">
+    <path id="envelope-regular-2" data-name="envelope-regular" d="M34.222,64H3.54A3.551,3.551,0,0,0,0,67.563V88.938A3.551,3.551,0,0,0,3.54,92.5H34.222a3.551,3.551,0,0,0,3.54-3.562V67.563A3.551,3.551,0,0,0,34.222,64Zm0,3.563v3.028c-1.654,1.355-4.29,3.462-9.926,7.9-1.242.983-3.7,3.345-5.415,3.318-1.712.028-4.173-2.335-5.415-3.318-5.635-4.441-8.272-6.548-9.926-7.9V67.563ZM3.54,88.938V75.162c1.69,1.355,4.087,3.255,7.74,6.134,1.612,1.277,4.435,4.1,7.6,4.079,3.151.017,5.938-2.761,7.6-4.078,3.653-2.878,6.05-4.78,7.74-6.134V88.938Z" transform="translate(6 -53)" fill="#eb0f00"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+All Section Headers - EngraversGothic BT(30px)(#EB0F00)
+
+Landing Page
+*Spicy Foods - Poor Richard
+*Every spicy craving, delivered at your door step. - Pristina
+
+Specials Section
+*Our Specials - EngraversGothic BT(30px)
+*Price - Poppins(20px)
+*Food Name - EngraversGothic BT(30px)
+ 
+Review Section
+
+*Customer name - Segoe UI (20px) Bold
+*Customer review - Segoe UI (20px) Regular
+
+Footer Section
+*Spicy Villa - Poor Richard (35px) Regular
+*Footer header - Segoe UI(23px, #EB0F00)
+*Footer Content - Segoe UI(20px, #ffffff)
+
+COLORS==> RED = #EB0F00, BLACK = #130E0E, GREY = 

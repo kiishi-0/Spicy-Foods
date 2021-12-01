@@ -1,0 +1,15 @@
+<svg id="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <filter id="twitter-brands" x="6" y="12.002" width="38.013" height="31.998" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Rectangle_20" data-name="Rectangle 20" d="M5,0H45a5,5,0,0,1,5,5V45a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0Z" fill="#130e0e"/>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#twitter-brands)">
+    <path id="twitter-brands-2" data-name="twitter-brands" d="M28.722,54.562c.02.284.02.569.02.853,0,8.673-6.6,18.667-18.667,18.667A18.541,18.541,0,0,1,0,71.137a13.573,13.573,0,0,0,1.584.081,13.14,13.14,0,0,0,8.145-2.8A6.573,6.573,0,0,1,3.6,63.865a8.274,8.274,0,0,0,1.239.1,6.939,6.939,0,0,0,1.727-.223A6.562,6.562,0,0,1,1.3,57.3v-.081a6.608,6.608,0,0,0,2.966.833A6.571,6.571,0,0,1,2.234,49.28a18.649,18.649,0,0,0,13.528,6.866,7.407,7.407,0,0,1-.162-1.5,6.567,6.567,0,0,1,11.355-4.489,12.917,12.917,0,0,0,4.164-1.584,6.543,6.543,0,0,1-2.884,3.616,13.153,13.153,0,0,0,3.778-1.016,14.1,14.1,0,0,1-3.291,3.389Z" transform="translate(9 -36.08)" fill="#eb0f00"/>
+  </g>
+</svg>
