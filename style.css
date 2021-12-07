@@ -153,3 +153,137 @@ main .cart{
         font-size:50px;
     }
 }
+/* CSS for Review and footer */
+.review_bar {
+  position: absolute;
+  top: 1300px;
+  max-width: 1300px;
+  justify-content: center;
+  padding-left: 100px;
+}
+.review_row {
+  display: flex;
+  flex-wrap: flex;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  max-width: 1350px;
+  transition: 1s ease;
+  overflow: hidden;
+  overflow-x: auto;
+}
+.review_bar h3 {
+  color: whitesmoke;
+  font-family: Georgia;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+.review_bar h3:hover {
+  color: red;
+  text-transform: capitalize;
+  padding-left: 20px;
+  font-size: larger;
+}
+.review_col {
+  background-color: grey;
+  min-width: 230px;
+  min-height: 230px;
+  border: 5px solid grey;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 black;
+  padding: 15px;
+  margin-left: 40px;
+  color: white;
+  font-family: courier;
+  text-align: center;
+  transition: 0.3s ease;
+}
+.review_col:hover {
+  border: 50px;
+  width: 240px;
+  height: 240px;
+}
+.review_col h4 {
+  font-weight: bolder;
+}
+.review_col p {
+  margin-top: 20px;
+  font-family: courier;
+}
+
+/* footer css */
+.row {
+  display: flex;
+  flex-wrap: flex;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: relative;
+  bottom: 227px;
+}
+.container {
+  max-width: 2000px;
+  margin: auto;
+  text-align: center;
+}
+.footer {
+  background-color: #24242b;
+  padding: 10px;
+  margin: 0;
+}
+.footer_col {
+  margin-top: 30px;
+  width: 25%;
+  margin-right: 40px;
+}
+.footer_col h4 {
+  font-size: 18px;
+  color: rgb(250, 64, 64);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-family: Georgia;
+  font-weight: 1000;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.footer_col h4:hover {
+  color: red;
+  padding-left: 10px;
+  font-size: larger;
+}
+.footer_col ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.footer_col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 300;
+  color: white;
+  display: block;
+  transition: all 0.3s ease;
+  font-family: Segoe UI;
+  font-weight: 500;
+}
+.footer_col ul li a {
+  text-decoration: none;
+}
+.footer_col ul li a:hover {
+  color: red;
+  padding-left: 10px;
+  font-weight: bolder;
+}
+.footer_col p {
+  color: white;
+  font-family: Segoe UI;
+}
+.Social-links a i {
+  margin-top: 10px;
+  padding-left: 30px;
+  transition: 0.3s ease;
+}
+.Social-links a i:hover {
+  position: relative;
+  color: red;
+  height: 30px;
+  width: 30px;
+}
