@@ -6,6 +6,13 @@
 body{
     background-color: #130E0E;
 }
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #333333;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
 a{
     color: #EB0F00;
     text-decoration: none;
@@ -105,9 +112,6 @@ header nav a.active{
         padding: 40px 0;
     }
 }
-@media only screen and (max-width: 360){
-
-}
 /* -+-+-+-+-+-+-+-+-+-+-+-+-+-+  MAIN SECTION  -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
 main .landing{
     height: 100vh;
@@ -159,7 +163,6 @@ main .cart{
 @media only screen and (min-width: 360px){
     main .landing{
         background-position: 70%;
-        background-color: red;
     }
 }
 
