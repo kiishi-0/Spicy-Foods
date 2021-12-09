@@ -105,6 +105,9 @@ header nav a.active{
         padding: 40px 0;
     }
 }
+@media only screen and (max-width: 360){
+
+}
 /* -+-+-+-+-+-+-+-+-+-+-+-+-+-+  MAIN SECTION  -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
 main .landing{
     height: 100vh;
@@ -151,6 +154,12 @@ main .cart{
 @media only screen and (max-width: 1024px){
     main .landing .landing-title-bar h1{
         font-size:50px;
+    }
+}
+@media only screen and (min-width: 360px){
+    main .landing{
+        background-position: 70%;
+        background-color: red;
     }
 }
 
