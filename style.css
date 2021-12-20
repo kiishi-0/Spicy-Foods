@@ -12,6 +12,11 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
     background-color: #333333;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    transition: background ease .25s;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: #431613;
+    box-shadow: inset 0 0 6px rgba(55, 55, 55, 0.3);
 }
 a{
     color: #EB0F00;
@@ -52,9 +57,12 @@ header nav a:not(.logo, .burger){
     padding: 20px 0;
     flex-grow: 1;
     text-align: center;
+    transition: color ease 0.25s,
+                background ease 0.25s;
 }
 header nav a:hover:not(.logo, .burger){
-    background-color: #130E0E;
+    background-color: #EB0F00;
+    color: #130E0E;
 }
 header nav a.active{
     box-shadow: inset 0 -5px 0 -1px #130E0E;
@@ -116,24 +124,34 @@ header nav a.active{
 main .landing{
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     box-sizing: border-box;
     width: 100%;
-    background-image: url(images/pexels-artem-beliaikin-929192.jpg);
-    background-size: cover;
+    
+    /* background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: left; */
     /* position: relative; */
 }
+main .landing div{
+    flex: 1;
+}
+main .landing .landing-pic{
+    background-image: url(images/pexels-artem-beliaikin-929192.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
 main .landing .landing-title-bar{
-    width: 100%;
-    height: 150px;
+    /* width: 100%; */
+    /* height: 150px; */
     background-color: #130E0E;
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    bottom: -60%;
+    flex-wrap: wrap;
+    /* bottom: -60%; */
 }
 main .landing .landing-title-bar h1{
     color: #EB0F00;
@@ -155,38 +173,50 @@ main .cart{
     right: 10%;
     top: 12%;
 }
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 765px){
     main .landing .landing-title-bar h1{
         font-size:50px;
     }
 }
 @media only screen and (min-width: 360px){
-    main .landing{
-        background-position: 70%;
+    main .landing .landing-pic{
+        background-position-x: 60%;
     }
 }
 
 
                       /*-----------Promo Area-------------*/
-section h1{
-    margin-top: 340px;
-    margin-left: 55px;
+section.promo-section{
+    width: 100%;
+    height: 100vh;
+    /* background-color: thistle; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+section.promo-section h1{
     color: #EB0F00;
+    font-family: 'EngraversGothic BT', 'Segoe UI', serif;
+    margin-left: 10%;
+
 }
 .promo{
     margin: 0;
     padding: 0;
     display: flex;
-    height: 90vh;
+    /* height: 50vh/; */
     align-items: center;
     justify-content: center;
 }
 
 .slider{
-    width: 800px;
+    width: 59%;
+    background-color: violet;
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
 }
 
 .slides{
@@ -202,6 +232,7 @@ section h1{
 .slide{
     width: 20%;
     transition: 2s;
+    /* height: 100px; */
 }
 
 .slide img{
@@ -216,6 +247,7 @@ section h1{
     margin-top: -40px;
     display: flex;
     justify-content: center;
+    /* background-color: tomato; */
 }
 
 .manual-btn{
@@ -287,54 +319,53 @@ section h1{
 }
 
 /* CSS for Review and footer */
+.review_container .review_bar h1{ 
+    font-family: 'EngraversGothic BT', 'Segoe UI', serif;
+    color: #EB0F00;
+}
 .review_bar {
-  position: absolute;
-  top: 1300px;
-  max-width: 1300px;
+  /* position: absolute;
+  top: 1300px; */
+  width: 100%;
+  height: 60vh;
+  align-items: center;
   justify-content: center;
-  padding-left: 100px;
+  display: flex;
+  /* background-color: red; */
+  /* padding-left: 100px; */
+  flex-direction: column;
 }
 .review_row {
   display: flex;
   flex-wrap: flex;
-  padding: 40px;
-  background-color: rgba(0, 0, 0, 0.6);
-  max-width: 1350px;
+  padding: 10px;
+  width: 90%;
   transition: 1s ease;
   overflow: hidden;
   overflow-x: auto;
 }
-.review_bar h3 {
+.review_bar h1 {
+    text-align: left;
+    width: 100%;
   color: whitesmoke;
   font-family: Georgia;
-  padding-left: 40px;
+  padding-left: 10%;
   margin-bottom: 20px;
   transition: all 0.3s ease;
 }
-.review_bar h3:hover {
-  color: red;
-  text-transform: capitalize;
-  padding-left: 20px;
-  font-size: larger;
-}
 .review_col {
   background-color: grey;
-  min-width: 230px;
-  min-height: 230px;
+  min-width: 300px;
+  min-height: 140px;
   border: 5px solid grey;
   border-radius: 12px;
   box-shadow: 0 4px 8px 0 black;
   padding: 15px;
-  margin-left: 40px;
+  margin-left: 20px;
   color: white;
   font-family: courier;
-  text-align: center;
+  text-align: left;
   transition: 0.3s ease;
-}
-.review_col:hover {
-  border: 50px;
-  width: 240px;
-  height: 240px;
 }
 .review_col h4 {
   font-weight: bolder;
@@ -349,41 +380,48 @@ section h1{
   display: flex;
   flex-wrap: flex;
   padding: 0px;
-  background-color: rgba(0, 0, 0, 0.9);
-  position: relative;
-  bottom: 227px;
+  /* background-color: rgba(0, 0, 0, 0.9); */
+  /* position: relative;
+  bottom: 227px; */
 }
 .container {
-  max-width: 2000px;
+    background-image: url(images/pexels-momo-king-5409022.jpg);
+    background-size: cover;
+  width: 100%;
   margin: auto;
   text-align: center;
+  max-height: 100vh;
+  background-position: bottom;
+  /* display: flex; */
 }
-.footer {
-  background-color: #24242b;
-  padding: 10px;
+/* .footer {
+  background-color: #130e0eb6;
   margin: 0;
+  padding: 25px;
 }
 .footer_col {
   margin-top: 30px;
-  width: 25%;
+  min-width: 15%;
+  max-width: 20%;
   margin-right: 40px;
 }
 .footer_col h4 {
   font-size: 18px;
-  color: rgb(250, 64, 64);
+  color: #EB0F00;
   text-transform: capitalize;
+  text-align: left;
   margin-bottom: 20px;
   font-family: Georgia;
   font-weight: 1000;
   position: relative;
   transition: all 0.3s ease;
-}
-.footer_col h4:hover {
+} */
+/* .footer_col h4:hover {
   color: red;
   padding-left: 10px;
   font-size: larger;
-}
-.footer_col ul li:not(:last-child) {
+} */
+/* .footer_col ul li:not(:last-child) {
   margin-bottom: 20px;
 }
 .footer_col ul li a {
@@ -396,27 +434,104 @@ section h1{
   transition: all 0.3s ease;
   font-family: Segoe UI;
   font-weight: 500;
+  text-align: left;
 }
 .footer_col ul li a {
   text-decoration: none;
 }
 .footer_col ul li a:hover {
   color: red;
-  padding-left: 10px;
-  font-weight: bolder;
+ 
 }
 .footer_col p {
   color: white;
   font-family: Segoe UI;
+  text-align: left;
 }
 .Social-links a i {
   margin-top: 10px;
   padding-left: 30px;
   transition: 0.3s ease;
+
+} */
+footer{
+    background-color: #130e0eb6;
+    min-height: 200px;
+    width: 100%;
+    display: flex;
+    color: #ffffff;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 1%;
+    box-sizing: border-box;
+  }
+  .footer-bar{
+    margin: 20px 10px;
+    font-size: 10px;
+  }
+  .footer-bar h4{
+    text-align: left;
+    margin-bottom: 10px;
+    color: #EB0F00;
+    font-size: 20px;
+
+  }
+  .footer-bar h4:not(.footer-1 h4){
+    font-family: 'Segoe UI', roboto, sans-serif;
+    
+  }
+  footer .footer-2{
+      width: 10%;
+  }
+  .footer-bar p{
+    text-align: left;
+    display: flex;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    /* font-size: 16px; */
+  }
+  footer .footer-bar img{
+    width: 50px;
+  }
+  footer .footer-1, footer .footer-3, footer .footer-4, footer .footer-5, footer .footer-6{
+    width: 15%;
+  }
+  footer .footer-2 ul li{
+    text-align: left;
+    margin-bottom: 5px;
+    color: #FFF;
+    font-size: 14px;
+  }
+  footer .footer-2 ul li a:hover{
+    color: #EB0F00;
+  }
+  footer .footer-2 ul li a{
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    transition: color ease .25s;
+   
+  }
+  @media (max-width: 1000px){
+    footer{
+      flex-direction: column;
+      justify-content: flex-start;
+      align-content: flex-end;
+      text-align: left;
+      padding: 50px 0;
+    }
+    .footer-bar{
+      margin: 20px;
+      font-size: 10px;
+      width: 80%;
+      text-align: center;
+    }
+  }
+.Social-links{
+    display: flex;
 }
-.Social-links a i:hover {
-  position: relative;
-  color: red;
+.Social-links a img{
   height: 30px;
   width: 30px;
+  margin-right:10px;
+  margin-top:10px;
 }
